@@ -13,6 +13,16 @@ Feel free to file an issue here if something is wrong with the site, thanks!
 
 <summary>How to develop locally</summary>
 
+If you wanna fork this for your own purposes, or make a PR, you will first need to get:
+
+- NodeJS (recommended v18+)
+- pnpm (`brew install pnpm` or equivalent)
+- An adequate editor with Typescript support (Neovim / VSCode)
+
+Once your have that software installed, `git clone ...` this repo and then run `pnpm install`.
+
+You're all set to run `pnpm dev` to get going locally!
+
 Inside of this project, you'll see the following folders and files:
 
 ```
