@@ -3,6 +3,8 @@
 This is a project I set up to handle inbound coaching / mentoring / tutoring / leveling-up sessions
 at my hourly rate over zoom or in person in Edinburgh.
 
+If you want to get in touch directly, just email me at <a href="mailto:sean@thenewells.us">sean@thenewells.us</a>.
+
 Feel free to file an issue here if something is wrong with the site, thanks!
 
 ## Development
