@@ -1,7 +1,7 @@
 ---
 ---
 
-<html lang="en">
+<html lang="en" class="text-2xl sm:text-lg">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍🏫</text></svg>" />
@@ -17,8 +17,10 @@
   </head>
   <body>
     <section class="bg-dark text-light p-8">
-      <h1 class="text-4xl">Coaching</h1>
-      <p class="mt-4">If you'd lke one on one coaching in Web Dev, Typescript, React, C#/.NET, or Leadership click that link below to connect with me via email and let's set something up!</p>
+      <h1 class="text-4xl">Sailing the Dev Seas</h1>
+      <p class="mt-2">Software Engineering can feel like being on the open sea. When you have a course charted, it can be an invigorating and life giving adventure akin to setting sail. But if your star chart is off, the compass is broken, your sail fails, or the rudder is busted - it is easy to start drifting off course. Great managers help a ton, good tech friends or commnity can upgrade your kit, but sometimes you don't have those resources at your disposal. I can be that resource for your journey.</p>
+      <h1 class="text-2xl mt-8">Coaching</h1>
+      <p class="mt-2">If you'd lke one on one coaching in Web Dev, Typescript, React, C#/.NET, or Leadership - click that link below to connect with me via email and let's get you ship shape!</p>
       <p class="mt-2">Topics and skills I can help with:</p>
       <ol class="pl-6 list-disc">
         <li>Typescript / Javascript - Become a TS Wizard 🧙‍♂️</li>
@@ -32,21 +34,29 @@
       </ol>
     </section>
     <section class="p-8 grid w-full justify-center">
-      <div class="group">
-        <span class="inline-block text-5xl mr-3 group-hover:animate-bounce-right">👉</span>
-        <div class="inline-block bg-brand rounded-lg self-center w-fit">
-          <h2 class="italic font-bold underline inline-block w-fit m-4 decoration-light text-3xl hover:decoration-dark">
-            <a href="mailto:sean@thenewells.us">Let's connect!</a>
-          </h2>
-        </div>
-        <span class="inline-block text-5xl ml-3 group-hover:animate-bounce-left">👈</span>
+      <div class="group grid grid-cols-6">
+        <span class="inline-block text-5xl mr-3 group-hover:animate-bounce-right col-span-1 self-center justify-self-end">👉</span>
+
+        <a class="relative inline-block bg-light italic w-fit py-4 px-4 sm:px-8 rounded-full self-center justify-self-center text-lg sm:text-3xl tracking-widest font-sans font-bold overflow-hidden col-span-4" href="mailto:sean@thenewells.us">
+          <span class="relative text-dark underline transition-colors ease-in-out duration-700 decoration-light z-10 group-hover:text-light">CONNECT</span>
+
+          <div class="
+            absolute duration-[1.2s] bg-brand top-[-4.5rem] group-hover:-top-32 left-0 w-full h-60
+            after:absolute before:absolute after:content-[''] before:content-[''] after:w-[200%] before:w-[200%] after:h-[200%] before:h-[200%] after:top-0 before:top-0 after:left-[50%] before:left-[50%] after:bg-light before:bg-light after:translate-x-[-50%] after:translate-y-[-75%] before:translate-x-[-50%] before:translate-y-[-75%]
+            before:rounded-[45%] before:animate-wave
+            after:rounded-[40%] after:opacity-50 after:animation-wave-slow
+          "></div>
+
+        </a>
+
+        <span class="inline-block text-5xl ml-3 group-hover:animate-bounce-left col-span-1 self-center">👈</span>
       </div>
     </section>
     <section class="p-8">
       <p class="">
         Pricing is set at <em class="font-bold">£100* per hour</em> for general services. Student discounts available (limitations apply).
       </p>
-      <p class="italic text-sm pl-4">*Payment currency flexible - direct payments can be sent to my personal <a title="Get your own wise account with this sign up link!" href="https://wise.com/invite/ath/seann251" target="_blank">Wise Account</a> in USD/GBP/EUR.</p>
+      <p class="italic text-sm pl-4">*Payment currency flexible - direct payments can be arranged over an agreed upon service, like <a class="text-dark underline" title="Get your own wise account with this sign up link!" href="https://wise.com/invite/ath/seann251" target="_blank">Wise</a>, in USD/GBP/EUR.</p>
     </section>
   </body>
 </html>
