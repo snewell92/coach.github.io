@@ -46,7 +46,7 @@ jobs:
 
       - name: Setup dum
         run: |
-          curl -sSL https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-unknown-linux-musl.tar.gz | tar -x
+          curl -sSL https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-unknown-linux-musl.tar.gz | tar -xz
           mv dum /usr/bin/dum
           which dum
 
