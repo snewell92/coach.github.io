@@ -44,11 +44,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Setup dum
-        run: |
-          curl -sSL https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-unknown-linux-musl.tar.gz | tar -xz
-          mv dum /usr/bin/dum
-          which dum
+      - uses: supplypike/setup-bin@v3
+        with:
+          name: 'dum'
+          uri: 'https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-unknown-linux-musl.tar.gz'
+          version: '0.1.19'
 
       - name: build
         run: dum run build
