@@ -20,36 +20,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v1
         with:
-          version: 7
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('./pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store
+          bun-version: latest
 
       - name: Install dependencies
-        run: pnpm install
-
-      - uses: supplypike/setup-bin@v3
-        with:
-          name: 'dum'
-          uri: 'https://github.com/egoist/dum/releases/download/v0.1.19/dum-x86_64-unknown-linux-musl.tar.gz'
-          version: '0.1.19'
+        run: bun install
 
       - name: build
-        run: dum run build
+        run: bun run build
 
