@@ -45,7 +45,7 @@ jobs:
         run: pnpm install
 
       - name: Setup dum
-        run: cargo install dum
+        run: curl -sSL https://bina.egoist.sh/egoist/dum | sh
 
       - name: build
         run: dum run build
